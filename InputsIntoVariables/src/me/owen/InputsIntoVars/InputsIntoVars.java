@@ -9,6 +9,5 @@ public class InputsIntoVars {
 		System.out.println("Total: "+SimpleAdder.addTwoInts());
 		System.out.println("Average: "+TestMarks.testMarks());
 		System.out.println("Centigrade: "+FahrenheitConverter.convert());
-		
 	}
 }
