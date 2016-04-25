@@ -2,12 +2,14 @@ package me.owen.InputsIntoVars.tasks;
 
 import java.util.Scanner;
 
+import me.owen.InputsIntoVars.InputsIntoVars;
+
 public class TestMarks {
 	private static int m1,m2,m3,condition=2;
 	private static double mTotal;
 	/* Test Marks Challenge */
 	public static double testMarks() {
-		Scanner input = new Scanner(System.in);
+		Scanner input = InputsIntoVars.getScanner();
 		// This can be shortened but will do that later ;D
 		do {
 			m1 = input.nextInt();
@@ -35,7 +37,6 @@ public class TestMarks {
 				System.out.println("Between 1-100");
 			}
 		} while (condition > 1);
-		input.close();
 		mTotal = (double) (m1 + m2 + m3) / 3;
 		return mTotal;
 	}

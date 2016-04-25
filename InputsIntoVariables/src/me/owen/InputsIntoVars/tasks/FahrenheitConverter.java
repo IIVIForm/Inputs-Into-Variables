@@ -2,13 +2,14 @@ package me.owen.InputsIntoVars.tasks;
 
 import java.util.Scanner;
 
+import me.owen.InputsIntoVars.InputsIntoVars;
+
 public class FahrenheitConverter {
-	private static double Centigrade;
 	public static double convert() {
-		Scanner input = new Scanner(System.in);
+		double Centigrade;
+		Scanner input = InputsIntoVars.getScanner();
 		System.out.println("Enter temperature in fahrenheit:");
 		Centigrade = ((input.nextDouble() - 32) * (5 / 9));
-		input.close();
 		return Centigrade;
 	}
 }
